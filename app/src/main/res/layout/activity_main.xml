@@ -24,25 +24,55 @@
         android:layout_height="3dp"
         android:background="@android:color/black"/>
 
-
     <TextView
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:hint="0"
+        android:textSize="50sp"
+        android:ellipsize="start"
         android:gravity="end"
-        android:textColor="#111111"
-        android:textStyle="bold"
-        android:text="0"
-        android:textSize="40sp" />
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@android:color/black"/>
 
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Ans"
+        android:textSize="60sp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:paddingLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="7dp"
+        android:id="@+id/btnClear"
+        android:layout_gravity="end"
+        android:text="C"
+        />
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:columnCount="4"
         android:rowCount="4">
 
@@ -65,7 +95,7 @@
             android:layout_margin="7dp"
             />
         <Button
-            android:id="@+id/btnadd"
+            android:id="@+id/btnAdd"
             android:text="+"
             android:layout_margin="7dp"
             />
@@ -89,7 +119,7 @@
             />
 
         <Button
-            android:id="@+id/btnsub"
+            android:id="@+id/btnSub"
             android:text="-"
             android:layout_margin="7dp"
             />
@@ -114,7 +144,7 @@
 
 
         <Button
-            android:id="@+id/btnmul"
+            android:id="@+id/btnMul"
             android:text="*"
             android:layout_margin="7dp"
             />
@@ -126,23 +156,25 @@
             />
 
         <Button
-            android:id="@+id/btndivide"
+            android:id="@+id/btnDivide"
             android:text="/"
             android:layout_margin="7dp"
             />
 
         <Button
-            android:id="@+id/btndec"
+            android:id="@+id/btnDec"
             android:text="."
             android:layout_margin="7dp"
             />
 
 
         <Button
-            android:id="@+id/btnequal"
+            android:id="@+id/btnEqual"
             android:text="="
             android:layout_margin="7dp"
             />
+
+
 
 <!--        <Button-->
 <!--            android:layout_width="wrap_content"-->
@@ -210,4 +242,5 @@
 <!--            android:layout_columnWeight="1"-->
 <!--            android:text="9" />-->
     </GridLayout>
+
 </LinearLayout>
